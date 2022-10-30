@@ -1,0 +1,83 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Ph26495_mob2022_ass" parent="Theme.Design.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#454343</item>
+        <item name="colorPrimaryVariant">#353232</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#F67F7F</item>
+        <item name="colorSecondaryVariant">#ccc</item>
+        <item name="colorOnSecondary">#F38B8B</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="MyTheme" parent="Theme.Design.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#454343</item>
+        <item name="colorPrimaryVariant">#F1ACAC</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#F18585</item>
+        <item name="colorSecondaryVariant">#FFFFFF</item>
+        <item name="colorOnSecondary">#F38B8B</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#000000</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyTheme2" parent="Theme.Design.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryVariant">#F1ACAC</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#F18585</item>
+        <item name="colorSecondaryVariant">#FFFFFF</item>
+        <item name="colorOnSecondary">#F38B8B</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#000000</item>
+        <!-- Customize your theme here. -->
+        <item name="floatingActionButtonStyle">@style/floating_button_style</item>
+    </style>
+    <style name="MyTheme3" parent="Theme.Design.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryVariant">#F1ACAC</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#F18585</item>
+        <item name="colorSecondaryVariant">#FFFFFF</item>
+        <item name="colorOnSecondary">#F38B8B</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#000000</item>
+        <!-- Customize your theme here. -->
+        <item name="floatingActionButtonStyle">@style/floating_button_style_2</item>
+    </style>
+
+    <style name="floating_button_style" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/FabShapeStyle</item>
+
+    </style>
+    <style name="floating_button_style_2" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/FabShapeStyle2</item>
+
+    </style>
+
+    <style name="FabShapeStyle" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">50%</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+    </style>
+    <style name="FabShapeStyle2" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">30%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+</resources>

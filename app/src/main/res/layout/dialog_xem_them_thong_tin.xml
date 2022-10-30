@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_background_dialog_add_3"
+    android:padding="10dp"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center|top"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/akaya_telivigala"
+            android:paddingTop="5dp"
+            android:shadowColor="#4FB3BA"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:text="Thông tin chi tiết"
+            android:textColor="#005B60"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_right_arrow"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/title_nguoi_thu_chi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/patrickhand"
+            android:text="Title"
+            android:textColor="#CF0F36"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/ten_nguoi_thu_chi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/patrickhand"
+            android:text="Tên nguoi thu/chi"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:layout_marginVertical="15dp"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_right_arrow"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/title_so_tien_thu_chi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/patrickhand"
+            android:text="Title"
+            android:textColor="#CF0F36"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/so_tien_thu_chi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/patrickhand"
+            android:text="Số tiền thu/chi"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_right_arrow"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/title_ghi_chu_thu_chi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/patrickhand"
+            android:text="Title"
+            android:textColor="#CF0F36"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/ghi_chu_thu_chi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/patrickhand"
+            android:text="Ghi chú thu/chi"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

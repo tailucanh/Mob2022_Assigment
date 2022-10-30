@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CHILDFRAGMENT.ThongKeChiFra"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:paddingLeft="20dp">
+            <ImageView
+                android:id="@+id/date_start_tk_chi"
+                style="@style/frag_tk_date_img_start"/>
+            <TextView
+                android:id="@+id/tv_date_start_tk_chi"
+                android:hint="Ngày bắt đầu"
+                style="@style/style_fragment_thong_ke_text_view"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="8dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img_thong_ke_true"
+                style="@style/frag_tk_button"
+                android:src="@drawable/ic_start_true"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img_thong_ke_false"
+                style="@style/frag_tk_button"
+                android:src="@drawable/ic_start_false"/>
+            <ImageView
+                android:id="@+id/img_thong_ke"
+                style="@style/frag_tk_button"
+                android:src="@drawable/ic_start"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/date_finish_tk_chi"
+                style="@style/frag_tk_date_img_finish"/>
+            <TextView
+                android:id="@+id/tv_date_finish_tk_chi"
+               style="@style/style_fragment_thong_ke_text_view"
+                android:hint="Ngày kết thúc"
+           />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:elevation="3dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="#83A19E"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/frag_tk_title"
+                android:text="Thống kê chi tiêu"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="20dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_subtitle_1"
+                    style="@style/frag_tk_subtitle"
+                    android:text="Số lượng khoản chi: "
+                    />
+                <TextView
+                    android:id="@+id/tv_soLuong_chi"
+                    style="@style/frag_tk_content"
+                    android:text="0"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="20dp"
+                android:paddingLeft="20dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_subtitle_2"
+                    style="@style/frag_tk_subtitle"
+                    android:text="Tổng tiền :"
+                    />
+                <TextView
+                    android:id="@+id/tv_tongTien_chi"
+                    style="@style/frag_tk_content_2"
+                    android:text="0"
+                    />
+                <TextView
+                    android:id="@+id/tv_VN_dong"
+                    style="@style/frag_tk_content"
+                    android:text="Đồng"
+                    android:fontFamily="@font/alata"
+                    android:layout_marginBottom="3dp"
+                    android:paddingLeft="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_content_tk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                style="@style/style_content_tk"
+                android:paddingHorizontal="30dp"
+                android:text=" ' Thời gian miễn phí, nhưng nó vô giá. Bạn không thể sở hữu nó, nhưng bạn có thể sử dụng nó. Bạn không thể giữ nó, nhưng bạn có thể tiêu nó. Một khi bạn đánh mất nó, bạn không bao giờ có thể lấy lại. '"
+              />
+            <TextView
+                style="@style/style_content_tk_2"
+                android:text=" – Harvey MacKay"
+          />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Assigment-Mob2022</string>
+    <string name="content1"><u>Forgot password ?</u></string>
+
+    <string name="contentTitle">Quick and easy</string>
+    <string name="hintSurname">Surname</string>
+    <string name="hintName">FirstName</string>
+    <string name="hintPhoneOrEmail">Phone or E-mail</string>
+    <string name="hintPass">Password</string>
+    <string name="textButton">Regiser</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_drawer_open">open nav</string>
+    <string name="nav_drawer_close">close nav</string>
+
+    <string name="conten1">\" If debugging is the process of removing bugs in software, then code is the process that causes bugs.\"</string>
+    <string name="conten2">\" I can accept failure, everyone fails at something. But I can’t accept not trying. \"</string>
+    <string name="conten3">\" Genius is one percent inspiration and ninety-nine percent perspiration. \"</string>
+    <string name="conten4">\" Nothing is so fatiguing as the eternal hanging on of an uncompleted task. \"</string>
+    <string name="conten5">\" The only person you should try to be better than is the person you were yesterday. \"</string>
+
+
+    <string name="content2"><u>Xem thêm.. </u></string>
+    //Headings-&amp;
+    <string name="heading_one">VietNam Food</string>
+    <string name="heading_two">Fast Delivery</string>
+    <string name="heading_three">Easy Payment</string>
+    <string name="heading_fourth">Android Developer</string>
+
+    //Description
+    <string name="desc_one">Vietnamese cuisine doesn\'t win any points for complexity. Many of the most popular dishes can be made just as well on the side of the road as in a top-end restaurant.</string>
+    <string name="desc_two">Fast delivery is the international name of the phrase delivery, which is synonymous with the word delivery or courier,
+        depending on the service that has different names.
+        Delivery services are performed through various forms with the aim of delivering goods to the end user through the agreed transportation process.</string>
+    <string name="desc_three">Easy Payment Plan is a feature of FE Credit Card which allows FE Cardholders to convert retail transactions which already
+made on the credit card into installments with customized tenors and preferential interest rate.</string>
+    <string name="desc_fourth">Android Developer is the person responsible for creating, developing, maintaining, and updating applications that can run on the Android platform.</string>
+</resources>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FRAGMENT.GioithieuFragment"
+    android:id="@+id/GioithieuFragment"
+    android:theme="@style/Theme.Design.Light.NoActionBar"
+  >
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="top"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:toolbarId="@+id/toolbar"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+          >
+            <fragment
+                android:id="@+id/fragment_slide"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="top"
+                android:name="vn.edu.poly.ph26495_mob2022_ass.FRAGMENT.FragmentSlideImage"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layout_gioi_thieu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingBottom="50dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_3"
+           >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                >
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/dialog_music_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/music_anime"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="10dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/tv_ImgInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:src="@drawable/info2"
+                        app:civ_border_width="3dp"
+                        app:civ_border_color="#DCDCDC"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/akronim"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="right|bottom"
+                        android:text="CALL ME !"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="normal|italic"
+                        android:layout_marginBottom="15dp"/>
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/imb_Call"
+                        android:layout_width="40dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginRight="18dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/callme"
+                        />
+            </FrameLayout>
+            <View
+                android:layout_width="140dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="#c0c0c0"
+                android:elevation="3dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hello" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/actor"
+                    android:paddingRight="10dp"
+                    android:text="I'm"
+                    android:textSize="27dp"
+                    android:textStyle="normal|italic"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/iv_title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/acme"
+                    android:text="Luc Anh Tai"
+                    android:textColor="#DD5353"
+                    android:textSize="27dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/verifieduser" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/alata"
+                    android:paddingLeft="7dp"
+                    android:text="tailaph26495@fpt.edu.vn"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="#c0c0c0"
+                android:elevation="1.5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <ImageView style="@style/style_fragment_gioi_thieu_img" />
+
+                    <TextView
+                        style="@style/style_fragment_gioi_thieu_title"
+                        android:text="Name :" />
+
+                    <TextView
+                        style="@style/style_fragment_gioi_thieu_content"
+                        android:text="Luc Anh Tai" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/style_fragment_gioi_thieu_img"  />
+
+                    <TextView
+                        style="@style/style_fragment_gioi_thieu_title"
+                        android:paddingRight="25dp"
+                        android:text="Facebook :"
+                      />
+
+                    <TextView
+                        android:id="@+id/tv_fb"
+                        style="@style/style_fragment_gioi_thieu_content"
+                        android:text="Fb.com/lucanhtai"
+                        android:textColor="#4BA7D1"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/style_fragment_gioi_thieu_img" />
+
+                    <TextView
+                        style="@style/style_fragment_gioi_thieu_title"
+                        android:text="Email :"
+                     />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        style="@style/style_fragment_gioi_thieu_content"
+                        android:text="lucanhtai@fpt.edu.vn"
+                        android:textColor="#4BA7D1"
+                      />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/style_fragment_gioi_thieu_img"  />
+
+                    <TextView
+                        style="@style/style_fragment_gioi_thieu_title"
+                        android:paddingRight="63dp"
+                        android:text="Jobs :"
+                       />
+
+                    <TextView
+                        style="@style/style_fragment_gioi_thieu_content"
+                        android:text="Mobile / Computer"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/style_fragment_gioi_thieu_img"  />
+
+                    <TextView
+                        style="@style/style_fragment_gioi_thieu_title"
+                        android:paddingRight="32dp"
+                        android:text="Birthday :"
+                      />
+
+                    <TextView
+                        style="@style/style_fragment_gioi_thieu_content"
+                        android:text="2003, 15th April"
+                      />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rightarrow" />
+
+                    <TextView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/annie_use_your_telescope"
+                        android:paddingRight="10dp"
+                        android:text=" When you want to give up, remember why you started."
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imb_facebook"
+                        style="@style/style_fragment_gioi_thieu_button"
+                        android:src="@drawable/facebook" />
+                    <ImageView
+                        android:id="@+id/imb_Ins"
+                        style="@style/style_fragment_gioi_thieu_button"
+                        android:src="@drawable/instagram" />
+
+                    <ImageView
+                        android:id="@+id/imb_git"
+                        style="@style/style_fragment_gioi_thieu_button"
+                        android:src="@drawable/github" />
+
+                    <ImageView
+                        android:id="@+id/imb_Linkedin"
+                        style="@style/style_fragment_gioi_thieu_button"
+                        android:src="@drawable/linkedin" />
+
+                    <ImageView
+                        android:id="@+id/imb_tiktok"
+                        style="@style/style_fragment_gioi_thieu_button"
+                        android:src="@drawable/tiktok" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_Mess"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="40dp"
+                        android:backgroundTint="#94E1E1"
+                        android:fontFamily="@font/acme"
+                        android:text="Message"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_Follow"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#EFB4B4"
+                        android:fontFamily="@font/acme"
+                        android:text="Follow"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/heart"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/amiri_bold_italic"
+                        android:text="450.5K "
+                        android:textSize="16dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/amiri_bold_italic"
+                        android:textColor="@color/black"
+                        android:text=" | "
+                        android:textSize="16dp"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/comment"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/amiri_bold_italic"
+                        android:text="457.5K "
+                        android:textSize="16dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/amiri_bold_italic"
+                        android:textColor="@color/black"
+                        android:text=" | "
+                        android:textSize="16dp" />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/send"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/amiri_bold_italic"
+                        android:text="456.5K "
+                        android:textSize="16dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

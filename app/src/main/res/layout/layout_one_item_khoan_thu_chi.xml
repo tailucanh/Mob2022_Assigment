@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="165dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:layout_margin="5dp"
+    android:paddingBottom="8dp">
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/swiper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mode="same_level"
+        app:dragEdge="left"
+     >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="40dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginVertical="2dp">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/light"
+                    android:layout_gravity="left|center"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/mo_rong_thong_tin"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/akaya_telivigala"
+                    android:gravity="left"
+                    android:text="@string/content2"
+                    android:textColor="#F8E115"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_update_khoan_thu_chi"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_update_1"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="centerCrop"/>
+                <ImageView
+                    android:id="@+id/img_delete_khoan_thu_chi"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_delete_2"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/custom_solid_one_item"
+            android:paddingVertical="5dp"
+          >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="3dp"
+                >
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_cart_2"
+                    android:layout_marginTop="15dp"
+                    />
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                >
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_dot"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/ten_khoan_thu_chi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/patrickhand"
+                    android:text="Tên khoan thu/chi"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="left"
+                android:gravity="left|center"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_time"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/ngay_thu_chi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/patrickhand"
+                    android:text="Ngày thu/chi"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_workflow"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/loai_thu_chi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/patrickhand"
+                    android:text="Loại thu/chi"
+                    android:textStyle="bold"
+                    android:textColor="#F14F4F"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
+</LinearLayout>

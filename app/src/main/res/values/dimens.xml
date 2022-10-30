@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingActivity">10dp</dimen>
+    <dimen name="paddingTitle">12dp</dimen>
+    <dimen name="paddingLeftEditText">12dp</dimen>
+    <dimen name="paddingButton">3dp</dimen>
+    <dimen name="paddingEditText">10dp</dimen>
+
+    <dimen name="widthButton">190dp</dimen>
+
+    <dimen name="marginEditText">10dp</dimen>
+    <dimen name="marginBox">20dp</dimen>
+    <dimen name="marginTopTitle">100dp</dimen>
+    <dimen name="marginTopEdText">20dp</dimen>
+    <dimen name="marginTopButton">25dp</dimen>
+
+
+    <dimen name="textSizeTitle">45dp</dimen>
+    <dimen name="textSizeContent">22dp</dimen>
+    <dimen name="textSizeEditText">17dp</dimen>
+    <dimen name="textSizeButton">22dp</dimen>
+</resources>

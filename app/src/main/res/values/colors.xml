@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!--  Màu của lay out hello screen-->
+    <color name="screen_start">#FF5F6D </color>
+    <color name="screen_end">#FFC371</color>
+
+    <!-- Màu của layout login   -->
+    <color name="login_start">#297D81</color>
+    <color name="login_end">#3D878A</color>
+    <color name="login_background">#CFE8E6</color>
+    <color name="colorTitle">#000000</color>
+    <color name="colorContent">#DF5F5C5C</color>
+    <color name="colorHint">#DF8F8E8E</color>
+    <color name="colorTitle2">#1491F4</color>
+    <color name="colorContent2">#5BB6E0</color>
+    <color name="colorHint2">#79B4E3</color>
+    <color name="colorTitle3">#FFA14D</color>
+    <color name="colorContent3">#ECAC72</color>
+    <color name="colorHint3">#E6FAC1B8</color>
+    <color name="colorCalculator">#1AC1D1</color>
+    <color name="colorCalculatorBox">#ED1E1E1E</color>
+    <color name="colorCalculatorBox2">#6D6B6B</color>
+
+
+    <color name="text_color_tab_layout">#E15050</color>
+    <color name="text_color_nav">#283736</color>
+    <color name="item_color_nav">#22777C</color>
+
+    <color name="background_tint_input">#42ADB3</color>
+
+
+    <color name="color_tv_fra_tk">#DF056367</color>
+    <color name="color_tv_fra_tk_2">#CC4545</color>
+    <color name="shadow_color_tv_fra_tk">#8FCFD3</color>
+    <color name="color_err_dialog">#FFEB3C</color>
+    <color name="color_err_dialog_2">#FDBE00</color>
+
+    <color name="color_animate">#C4F7FA</color>
+    <color name="color_animate_2">#016A70</color>
+    <color name="color_animate2">#FD1E5D</color>
+    <color name="color_hint_input_layout">#01848A</color>
+    <color name="color_hint_text">#01848A</color>
+
+
+    <color name="green_2">#7EE182</color>
+    <color name="gray">#373636</color>
+    <color name="gray_100">#737070</color>
+
+    <color name="red">#F34857</color>
+
+    <color name="inactive">#C4C4C4</color>
+    <color name="active">#50C2C9</color>
+</resources>
