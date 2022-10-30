@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="15dp"
+    android:background="@drawable/login_custom_border"
+    android:layout_gravity="center"
+    android:elevation="10dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/permanen"
+        android:text="Login Account"
+        android:textColor="#1E989E"
+        android:shadowColor="#92E7EC"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="5"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#129CA3"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="#3AABB1"
+        android:layout_marginTop="15dp"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/red"
+
+      >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#42ADB3"
+            android:fontFamily="@font/acme"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="#129CA3"
+        app:passwordToggleTint="#129CA3"
+        app:hintAnimationEnabled="true"
+        app:counterTextColor="@color/black"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:hintTextColor="#3AABB1"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/red">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#42ADB3"
+            android:fontFamily="@font/acme"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="left"
+        android:paddingLeft="5dp"
+        android:text="@string/content1"
+        android:textColor="#25969C"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button_login"
+        android:fontFamily="@font/alegreya"
+        android:text="LOG IN"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/login_custom_border"
+       >
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="1dp"
+            android:background="#15989F"
+            android:elevation="1dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/btn_or"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:text="OR"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="#EBF4F4"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_login2"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/google_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/google"
+            android:background="@drawable/custom_button_login3"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="15dp"
+            />
+        <ImageButton
+            android:id="@+id/facebook_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/facebook"
+            android:background="@drawable/custom_button_login3"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="15dp"
+            />
+        <ImageButton
+            android:id="@+id/github_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/github"
+            android:background="@drawable/custom_button_login3"
+            android:scaleType="centerCrop"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

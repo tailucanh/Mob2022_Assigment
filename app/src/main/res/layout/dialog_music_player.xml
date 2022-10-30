@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="600dp"
+    android:background="@drawable/custom_boder_music_player"
+    android:layout_gravity="center"
+
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_music">
+        <ImageView
+            android:id="@+id/disk_music"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/disk_music"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="40dp"
+            />
+        <SeekBar
+            android:id="@+id/music_barr"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="140dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="bottom|center" />
+
+        <TextView
+            android:id="@+id/music_time_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="65dp"
+            android:layout_marginBottom="120dp"
+            android:fontFamily="@font/patrickhand"
+            android:text="0:00"
+            android:textColor="#475159" />
+        <TextView
+            android:id="@+id/music_time_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="120dp"
+            android:fontFamily="@font/patrickhand"
+            android:text="0:00"
+            android:textColor="#475159" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="155dp"
+            android:src="@drawable/ic_favorite" />
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="50dp"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/back_music"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_music_back"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left|center"/>
+            <ImageView
+                android:id="@+id/play_music"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_music_pause"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                />
+            <ImageView
+                android:id="@+id/stop_music"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_stop_music"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                />
+            <ImageView
+                android:id="@+id/next_music"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_music_next"
+                android:scaleType="centerCrop"
+                android:layout_gravity="right|center"/>
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

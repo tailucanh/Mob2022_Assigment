@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyGame.ActivitySecond"
+    android:orientation="vertical"
+    android:background="#35888C"
+    >
+
+    <include layout="@layout/actionbar2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/goi_y"
+            style="@style/style_goi_y_game"
+            />
+
+        <Chronometer
+            android:id="@+id/simpleChronometer"
+           style="@style/style_simpleChronometer" />
+
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#35888C"
+        android:layout_marginBottom="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_caudo"
+            style="@style/style_cau_do_game"
+            android:src="@drawable/caudo2" />
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:backgroundTint="#35888C"
+            >
+            <ImageView
+                android:id="@+id/img_a"
+                style="@style/style_dap_an_img_game"
+                android:src="@drawable/a2"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:backgroundTint="#35888C"
+            >
+            <ImageView
+                android:id="@+id/img_b"
+                style="@style/style_dap_an_img_game"
+                android:src="@drawable/b2"
+                 />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:backgroundTint="#35888C"
+            >
+            <ImageView
+                android:id="@+id/img_c"
+                style="@style/style_dap_an_img_game"
+                android:src="@drawable/c2"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#35888C"
+            >
+            <ImageView
+                android:id="@+id/img_d"
+                style="@style/style_dap_an_img_game"
+                android:src="@drawable/d2"
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rdg_caudo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/rdo_dapanA"
+                style="@style/style_dap_an_game"
+                android:text="A"
+                android:layout_marginRight="38dp"
+                />
+            <RadioButton
+                android:id="@+id/rdo_dapanB"
+                style="@style/style_dap_an_game"
+                android:text="B"
+                android:layout_marginRight="28dp"
+                />
+            <RadioButton
+                android:id="@+id/rdo_dapanC"
+                style="@style/style_dap_an_game"
+                android:text="C"
+                android:layout_marginRight="27dp"
+                />
+            <RadioButton
+                android:id="@+id/rdo_dapanD"
+                style="@style/style_dap_an_game"
+                android:text="D"
+                android:layout_marginLeft="5dp"
+                />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_kiemtra"
+               style="@style/style_button_game"
+                android:paddingHorizontal="25dp"
+                android:text="Kiểm tra "/>
+
+            <Button
+                android:id="@+id/btn_dauhang"
+                style="@style/style_button_game"
+                android:paddingHorizontal="25dp"
+                android:text="Đầu hàng"
+               android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                 style="@style/style_content_game"
+                android:text="@string/conten2"
+               />
+            <TextView
+                style="@style/style_content_title_game"
+                android:text="– Michael Jordan."
+              />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

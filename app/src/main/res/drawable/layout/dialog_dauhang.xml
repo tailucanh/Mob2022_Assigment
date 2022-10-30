@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/custom_background_dialog"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andika_new_basic_bold"
+        android:text="Muốn đầu hàng à ?"
+        android:textColor="#FFEB3B"
+        android:textSize="25dp" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/rabbit"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="Đừng có mơ..."
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+
+
+
+
+</LinearLayout>

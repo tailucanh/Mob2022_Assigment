@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:background="@drawable/custom_background_dialog_add_2"
+    android:padding="20px"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_add_chi_3"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <View
+        android:layout_width="110dp"
+        android:layout_height="0.2dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="3dp"
+        android:elevation="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ed_ten_khoan_chi"
+        style="@style/style_input_layout_dialog_add"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+
+            style="@style/text_input_edit_text"
+            android:hint="Tên khoản chi"
+          />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ed_ten_nguoi_chi"
+        style="@style/style_input_layout_dialog_add"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/text_input_edit_text"
+            android:hint="Tên người chi"
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_ngay_chi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/style_input_layout_dialog_add"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/text_input_edit_text"
+                android:hint="Chọn ngày chi"
+              />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageView
+            android:id="@+id/datetime_chi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/calendar"
+            android:scaleType="centerCrop"
+
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/style_input_layout_dialog_add"
+        android:id="@+id/ed_so_tien_chi"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/text_input_edit_text"
+            android:hint="Số tiền chi"
+            android:inputType="number"
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/style_input_layout_dialog_add"
+        android:id="@+id/ed_ghi_chu_chi"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+
+            style="@style/text_input_edit_text"
+            android:hint="Ghi chú"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Spinner
+        android:id="@+id/spinner_loai_chi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_spinner"
+        android:spinnerMode="dropdown"
+
+       />
+    <Button
+        android:id="@+id/btn_save_khoanChi"
+        style="@style/style_button_text_input"
+        android:text="Save"
+       />
+
+</LinearLayout>

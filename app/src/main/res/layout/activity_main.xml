@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start"
+    android:theme="@style/MyTheme2"
+    >
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_activity"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/custom_tool_bar"
+            android:layout_gravity="top"
+            >
+            <ImageView
+                android:id="@+id/img_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_list"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin của tôi"
+                android:fontFamily="@font/permanen"
+                android:textColor="@android:color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                />
+            <ImageView
+                android:id="@+id/ic_toolbar"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_tool_bar"
+                android:scaleType="centerCrop"/>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/container_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|top"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_anchor="@id/toolbar_activity" />
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+                android:id="@+id/bottom_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_anchor="@id/container_activity"
+                app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+                app:layout_anchorGravity="bottom"
+                app:mbn_backgroundBottomColor="#419397"
+                app:mbn_circleColor="#FFFFFF"
+                app:mbn_countBackgroundColor="#42A198"
+                app:mbn_defaultIconColor="#FFFFFF"
+                app:mbn_selectedIconColor="#24A8AF" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_View"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/layout_header_nav"
+        app:menu="@menu/menu_nav"
+        app:itemTextAppearance="@style/text_nav"
+        >
+        <TextView
+            android:id="@+id/bottom_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="No pain , no gain!"
+            android:fontFamily="@font/caveat"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

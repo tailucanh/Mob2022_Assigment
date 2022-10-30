@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_actionbar"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:fontFamily="@font/andika_new_basic_bold"
+        android:text="TEST IQ"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="22dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/flower" />
+
+
+</LinearLayout>

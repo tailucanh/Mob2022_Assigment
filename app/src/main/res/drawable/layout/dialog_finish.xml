@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/custom_background_dialog"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andika_new_basic_bold"
+        android:text="Hoàn thành bài test!"
+        android:gravity="center"
+        android:textColor="#FFEB3B"
+        android:textSize="25dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/finish"
+        android:scaleType="fitXY"/>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/seeyou"/>
+    <TextView
+        android:id="@+id/tv_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Finish"
+        android:textColor="#75EFE4"
+        android:textSize="25dp"
+        android:fontFamily="@font/acme"/>
+
+
+
+
+</LinearLayout>
